@@ -4,7 +4,7 @@ var archetypeCell = document.getElementsByClassName('archetypeCell');
 var class_main = document.getElementsByClassName('class_main');
 var current_display_archetype = document.getElementsByClassName('archetype1');
 var current_display_main = true;
-
+var background = document.getElementsByClassName('selector-stat')
 
 function openNav() {
   document.getElementById("navigation").style.width = "100%";
@@ -76,5 +76,40 @@ else
     class_main[i].style.display='block';
   }
 }
+
+}
+
+function SearchBackground ()
+{
+
+  var mstat = document.getElementById('mstat').value; //Выборка уровня в выпадающем списке
+  var sstat1 = document.getElementById('sstat1').value; //Выборка школы1 в выпадающем списке
+  var sstat2 = document.getElementById('sstat2').value; //Выборка школы2 в выпадающем списке
+
+  //На случай если одна из школ пуста
+  if ((sstat1 == "") && (sstat2 != "")) {
+    sstat1 = sstat2
+  } 
+  else if ((sstat2 == "") && (sstat1 != "")) {
+    sstat2 = sstat1
+  }
+  else if ((sstat2 == "") && (sstat1 == "")) {
+    sstat1 = mstat
+    sstat2 = mstat
+  }
+  
+
+  for (var i = 0; i < background.length; i++) {
+    if (background[i].classList.contains(mstat) && (background[i].classList.contains(sstat1) || background[i].classList.contains(sstat2)))
+    {
+      background[i].style.display = 'block'
+
+    }
+    else
+    {
+      background[i].style.display = 'none' 
+    }
+  }
+
 
 }
