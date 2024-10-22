@@ -113,3 +113,27 @@ function SearchBackground ()
 
 
 }
+
+
+function SearchFeat ()
+{
+
+  var mstat = document.getElementById('mstat').value; //Выборка уровня в выпадающем списке
+
+
+  
+
+  for (var i = 0; i < background.length; i++) {
+    if (background[i].classList.contains(mstat))
+    {
+      background[i].style.display = 'block'
+
+    }
+    else
+    {
+      background[i].style.display = 'none' 
+    }
+  }
+
+
+}
