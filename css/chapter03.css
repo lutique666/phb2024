@@ -53,6 +53,18 @@ padding-right: 10%;
   font-weight: bold
 }
 
+.quote {
+  position: relative;
+  width: 30%;
+  margin:0;
+
+}
+
+
+.quote p {
+  font-style: italic;
+}
+
 #inputform {
   position: relative;
   text-align: center;
