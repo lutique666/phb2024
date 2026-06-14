@@ -7,6 +7,6 @@
 <p><a href="Chapter06.html">Глава 6: Снаряжение.</a></p>
 <p><a href="Chapter07.html">Глава 7: Правила магии.</a> </p>
 <p><a href="Chapter07gen.html">Глава 7: Заклинания.</a></p>
-<p>Перевод выполнен Koroz&nbsp;</p>
+<p>Перевод выполнен Koroz</p>
 <p><a href="https://boosty.to/koroz/posts/01eec506-1e90-49df-bf4e-fc5717c0088c">Boosty</a></p>
 
